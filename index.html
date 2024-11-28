@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisa 10 Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .top-bar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #ffdd00;
+            color: #333;
+            font-weight: bold;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #ffc800;
+        }
+
+        .user-options a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .user-options a:hover {
+            color: #ffdd00;
+        }
+
+        nav {
+            background-color: #00337a;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd00;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #004aad, #00337a);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        .categories {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories h2 {
+            margin-bottom: 15px;
+            color: #004aad;
+        }
+
+        .category-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .category-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #004aad;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">Camisa 10 Shop</div>
+            <div class="search-bar">
+                <input type="text" placeholder="O que você procura?">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+                <a href="login.html">Login</a>
+                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="loja1.html">Loja</a></li>
+                <li><a href="brasileirao.html">Brasileirão</a></li>
+                <li><a href="internacionais.html">Internacionais</a></li>
+                <li><a href="selecao.html">Seleções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Entre para o time dos loucos por futebol!</h1>
+            <p>Receba ofertas e lançamentos exclusivos.</p>
+        </section>
+        <section class="categories">
+            <h2>Categorias</h2>
+            <div class="category-item">Camisas Brasileirão 2024</div>
+            <div class="category-item">Camisas Internacionais</div>
+            <div class="category-item">Camisas Seleções</div>
+        </section>
+    </main>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <footer>
+        <p>&copy; 2024 Camisa 10 Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
